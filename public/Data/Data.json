@@ -1,0 +1,149 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "picture": "image1.jpg",
+        "title": "Product 1",
+        "category": "Electronics",
+        "category_bg": "#3498db",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#2ecc71",
+        "description": "A high-quality electronic product.",
+        "price": 199.99
+      },
+      {
+        "id": 2,
+        "picture": "image2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "category_bg": "#e74c3c",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#3498db",
+        "description": "Trendy clothing item for all occasions.",
+        "price": 49.99
+      },
+      {
+        "id": 3,
+        "picture": "image3.jpg",
+        "title": "Product 3",
+        "category": "Home & Garden",
+        "category_bg": "#f39c12",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#e74c3c",
+        "description": "Enhance your home with this beautiful item.",
+        "price": 79.99
+      },
+      {
+        "id": 4,
+        "picture": "image4.jpg",
+        "title": "Product 4",
+        "category": "Toys",
+        "category_bg": "#9b59b6",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#f39c12",
+        "description": "Fun and educational toy for kids.",
+        "price": 29.99
+      },
+      {
+        "id": 5,
+        "picture": "image4.jpg",
+        "title": "Product 4",
+        "category": "Toys",
+        "category_bg": "#9b59b6",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#f39c12",
+        "description": "Fun and educational toy for kids.",
+        "price": 29.99
+      },
+      {
+        "id": 6,
+        "picture": "image3.jpg",
+        "title": "Product 3",
+        "category": "Home & Garden",
+        "category_bg": "#f39c12",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#e74c3c",
+        "description": "Enhance your home with this beautiful item.",
+        "price": 79.99
+      },
+      {
+        "id": 7,
+        "picture": "image2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "category_bg": "#e74c3c",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#3498db",
+        "description": "Trendy clothing item for all occasions.",
+        "price": 49.99
+      },
+      {
+        "id": 8,
+        "picture": "image1.jpg",
+        "title": "Product 1",
+        "category": "Electronics",
+        "category_bg": "#3498db",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#2ecc71",
+        "description": "A high-quality electronic product.",
+        "price": 199.99
+      },
+      {
+        "id": 9,
+        "picture": "image3.jpg",
+        "title": "Product 3",
+        "category": "Home & Garden",
+        "category_bg": "#f39c12",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#e74c3c",
+        "description": "Enhance your home with this beautiful item.",
+        "price": 79.99
+      },
+      {
+        "id": 10,
+        "picture": "image2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "category_bg": "#e74c3c",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#3498db",
+        "description": "Trendy clothing item for all occasions.",
+        "price": 49.99
+      },
+      {
+        "id": 11,
+        "picture": "image1.jpg",
+        "title": "Product 1",
+        "category": "Electronics",
+        "category_bg": "#3498db",
+        "card_bg": "#ecf0f1",
+        "text_color": "#333333",
+        "button_bg": "#2ecc71",
+        "description": "A high-quality electronic product.",
+        "price": 199.99
+      },
+      {
+        "id": 12,
+        "picture": "image4.jpg",
+        "title": "Product 4",
+        "category": "Toys",
+        "category_bg": "#9b59b6",
+        "card_bg": "#f2f2f2",
+        "text_color": "#333333",
+        "button_bg": "#f39c12",
+        "description": "Fun and educational toy for kids.",
+        "price": 29.99
+      }
+    ]
+  }
+  
