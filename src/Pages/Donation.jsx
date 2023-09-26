@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getToLs } from "../Utility/localstorage";
 import Donationcard from "../Components/DonationCard/Donationcard";
+// import Statistics from "./Statistics";
 
 
 const Donation = () => {
@@ -14,7 +15,7 @@ const Donation = () => {
     
     useEffect(()=>{
        const getLsdata = getToLs();
-       console.log(getLsdata);
+    //    console.log(getLsdata);
        if (data.length>0) {
         const showdata =[];
          for (const id of getLsdata) {
@@ -23,8 +24,9 @@ const Donation = () => {
          }
          setdatas(showdata)
        }
+
     },[data])
-    console.log(datas);
+    // console.log(datas);
     return (
         <div className="mx-w-4xl mx-auto px-8 mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grids-cols-2 gap-6">
@@ -36,7 +38,8 @@ const Donation = () => {
             </div>
             <div className="text-center mt-6">
            {
-            datas.length>4 &&  <button onClick={()=>setisShow(!isShow)} className="btn btn-success text-white">Sell All</button>
+                datas.length >4 && !isShow && ( <button onClick={()=>setisShow(!isShow)} className="btn btn-success text-white">See All</button>)
+              
            }
             </div>
         </div>

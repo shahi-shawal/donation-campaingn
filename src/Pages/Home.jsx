@@ -11,7 +11,7 @@ const Home = () => {
     .then(data=> setDatas(data))
     return (
         <div>
-            <Banner></Banner>
+            <Banner datas={datas}></Banner>
             <DisplayCategory datas={datas}></DisplayCategory>
         </div>
     );

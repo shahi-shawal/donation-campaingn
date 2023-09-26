@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Donationcard = ({datas}) => {
     const {
+          id,
         picture,
         title,
         category,
@@ -16,7 +17,7 @@ const Donationcard = ({datas}) => {
     return (
         <div>
          <div className=''>
-        <div className=" flex flex-row card card-compact shadow-xl" style={{backgroundColor:card_bg}}>
+        <div className=" mt-6 flex flex-row card card-compact shadow-xl" style={{backgroundColor:card_bg}}>
           <div>
           <figure>
             <img
@@ -30,7 +31,7 @@ const Donationcard = ({datas}) => {
             <p  className="font-bold text-xl">{title}</p>
             <p style={{color:text_color}} className="font-bold text-xl">${price}</p>
             <div className='mt-2 w-28 text-white font-semibold p-2 rounded-lg' style={{backgroundColor:button_bg}}>
-            <Link to="/category"><button>View Details</button></Link>
+            <Link to={`/category/${id}`}><button>View Details</button></Link>
           </div>
           </div>
           
