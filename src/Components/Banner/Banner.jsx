@@ -1,4 +1,38 @@
-const Banner = () => {
+
+import { useEffect, useState } from "react";
+import DisplayCategory from "../Category/DisplayCategory";
+
+const Banner = ({datas}) => {
+    // console.log(datas);
+    const [defaultt, setDefault]=useState()
+    const [searchval, setSearchval]= useState(defaultt)
+    const [catval, setcatval]= useState([])
+
+   
+    // const handelClick=()=>{
+    //  const filteritem= catval.filter((filter)=> console.log(filter.category))
+    //  console.log(filteritem);
+    // }
+    useEffect(()=>{
+      const defa= datas.map((de)=> de.category)
+      setDefault(defa)
+    },[datas])
+    const handelsub=e=>{
+      e.preventDefault()
+
+        const catD= datas.filter((catitem)=> catitem.category === searchval)
+        setcatval(catD);
+        console.log(catD);
+    
+      // console.log(e.target.category.value);
+      console.log(searchval);
+    }
+    const handelChange=e=>{
+
+      console.log(e.target.value);
+      setSearchval(e.target.value);
+    }
+    
   return (
     <div>
       <div
@@ -14,18 +48,31 @@ const Banner = () => {
               I Grow By Helping People In Need
             </h1>
             <div className="flex justify-center mt-8">
-              <div className="input-group w-full max-w-xs text-black">
-                <input
+              {/* <div className="input-group w-full max-w-xs text-black">
+                <input onChange={e=> setSearchval(e.target.value)}
                   type="text"
                   placeholder="Search here…"
                   className="input input-bordered"
                 />
-                <button  className="btn text-white bg-red-500 border-red-500 hover:bg-red-500 text-white border-red-500  w-20">Search</button>
+                <button onClick={()=>handelClick()} className="btn text-white bg-red-500 border-red-500 hover:bg-red-500 text-white border-red-500  w-20">Search</button>
+              </div> */}
+              <div  className="input-group w-full max-w-xs text-black">
+                <form onSubmit={handelsub}>
+                <input onChange={handelChange}
+                  type="text"
+                  placeholder="Search here…"
+                  name="category"
+                  className="input input-bordered"
+                />
+                <button className="btn text-white bg-red-500 border-red-500 hover:bg-red-500 text-white border-red-500  w-20">Search</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <DisplayCategory datas={datas} catval={catval}></DisplayCategory>
+
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Donationcard = ({datas}) => {
     return (
         <div>
          <div className=''>
-        <div className=" mt-6 flex flex-row card card-compact shadow-xl" style={{backgroundColor:card_bg}}>
+        <div className="  flex flex-row card card-compact shadow-xl" style={{backgroundColor:card_bg}}>
           <div>
           <figure>
             <img
@@ -28,9 +28,9 @@ const Donationcard = ({datas}) => {
           </div>
           <div className="mt-6 ml-4" >
             <h2 className="w-[100px] p-1 card-title" style={{color:text_color, backgroundColor:category_bg}}>{category}</h2>
-            <p  className="font-bold text-xl">{title}</p>
+            <p  className="font-bold lg:text-xl">{title}</p>
             <p style={{color:text_color}} className="font-bold text-xl">${price}</p>
-            <div className='mt-2 w-28 text-white font-semibold p-2 rounded-lg' style={{backgroundColor:button_bg}}>
+            <div className='mb-2 mt-2 w-28 text-white font-semibold p-1 lg:p-2 rounded-lg' style={{backgroundColor:button_bg}}>
             <Link to={`/category/${id}`}><button>View Details</button></Link>
           </div>
           </div>
